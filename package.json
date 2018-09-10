@@ -2,13 +2,14 @@
   "name": "rth-component-library",
   "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
-    "precommit": "lint-staged && CI=true npm test"
+    "start": "rth-ui-runner start",
+    "build": "rth-ui-runner build",
+    "test": "rth-ui-runner test",
+    "lint": "rth-ui-runner lint",
+    "lint-fix": "eslint --fix",
+    "precommit": "lint-staged && CI=true npm test",
+    "styleguide": "docz:dev",
+    "styleguide:build": "docz:build"
   },
   "lint-staged": {
     "*.js": [
@@ -17,16 +18,16 @@
     ]
   },
   "dependencies": {
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-react": "^7.11.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4"
+    "rth-ui-runner": "^1.2.0",
+    "styled-components": "^3.4.5"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-jest": "^21.21.0",
-    "eslint-plugin-prettier": "^2.6.2",
+    "docz": "^0.11.1",
     "husky": "^0.14.3",
-    "lint-staged": "^7.2.2",
-    "prettier": "^1.14.2"
+    "lint-staged": "^7.2.2"
   }
 }
