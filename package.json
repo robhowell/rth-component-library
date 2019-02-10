@@ -1,12 +1,11 @@
 {
-  "name": "rth-component-library",
+  "name": "@rth/rth-component-library",
   "version": "1.0.0",
+  "main": "dist/assets/bundle.ef4d0a7f.chunk.js",
   "scripts": {
-    "start": "rth-ui-runner start",
-    "build": "rth-ui-runner build",
-    "test": "rth-ui-runner test",
-    "lint": "rth-ui-runner lint",
-    "lint-fix": "eslint --fix",
+    "build": "jetpack build && node scripts/setMainScript.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "precommit": "lint-staged && CI=true npm test",
     "styleguide": "docz dev",
     "styleguide:build": "docz build"
@@ -18,17 +17,30 @@
     ]
   },
   "dependencies": {
-    "eslint-plugin-jest": "^21.22.0",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "rth-ui-runner": "^1.2.0",
     "styled-components": "^3.4.5"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "docz": "^0.13.7",
     "docz-theme-default": "^0.13.7",
+    "edit-json-file": "^1.2.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-config-semipretty": "^3.0.0",
+    "eslint-config-semistandard": "^12.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "eslint-plugin-react": "^7.11.1",
     "husky": "^0.14.3",
-    "lint-staged": "^7.2.2"
+    "jetpack": "^0.12.2",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.16.4"
   }
 }
