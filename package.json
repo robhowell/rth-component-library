@@ -1,5 +1,5 @@
 {
-  "name": "@rth/rth-component-library",
+  "name": "@rth/component-library",
   "version": "1.0.0",
   "main": "dist/assets/bundle.ef4d0a7f.chunk.js",
   "scripts": {
@@ -41,6 +41,8 @@
     "husky": "^0.14.3",
     "jetpack": "^0.12.2",
     "lint-staged": "^7.2.2",
-    "prettier": "^1.16.4"
+    "nodegit": "^0.24.1",
+    "prettier": "^1.16.4",
+    "rmfr": "^2.0.0"
   }
 }
