@@ -1,9 +1,9 @@
 {
   "name": "@rth/component-library",
   "version": "1.0.0",
-  "main": "dist/assets/bundle.ef4d0a7f.chunk.js",
+  "main": "dist/main.js",
   "scripts": {
-    "build": "jetpack build && node scripts/setMainScript.js",
+    "build": "webpack --mode=production",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "precommit": "lint-staged && CI=true npm test",
@@ -31,7 +31,6 @@
     "babel-plugin-styled-components": "^1.10.0",
     "docz": "^0.13.7",
     "docz-theme-default": "^0.13.7",
-    "edit-json-file": "^1.2.1",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.10.0",
     "eslint-config-semipretty": "^3.0.0",
@@ -42,10 +41,11 @@
     "eslint-plugin-prettier": "^2.7.0",
     "eslint-plugin-react": "^7.11.1",
     "husky": "^0.14.3",
-    "jetpack": "^0.12.2",
     "lint-staged": "^7.2.2",
     "nodegit": "^0.24.1",
     "prettier": "^1.16.4",
-    "rmfr": "^2.0.0"
+    "rmfr": "^2.0.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
   }
 }
