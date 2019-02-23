@@ -8,7 +8,8 @@
     "lint-fix": "eslint . --fix",
     "precommit": "lint-staged && CI=true npm test",
     "styleguide": "docz dev",
-    "styleguide:build": "docz build"
+    "styleguide:build": "docz build",
+    "find-usage": "node scripts/findUsage/findUsage.js"
   },
   "lint-staged": {
     "*.js": [
@@ -25,6 +26,8 @@
     "styled-components": "^3.4.5"
   },
   "devDependencies": {
+    "acorn": "^6.1.0",
+    "acorn-jsx": "^5.0.1",
     "babel-plugin-styled-components": "^1.10.0",
     "docz": "^0.13.7",
     "docz-theme-default": "^0.13.7",
