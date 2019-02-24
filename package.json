@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
+    "start": "docz dev",
     "build": "webpack --mode=production",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "precommit": "lint-staged && CI=true npm test",
-    "styleguide": "docz dev",
-    "styleguide:build": "docz build",
     "find-usage": "node scripts/findUsage/findUsage.js"
   },
   "lint-staged": {
